@@ -42,7 +42,7 @@ Each policy has its own detailed documentation.
 
 Please report bugs on GitHub.
 
-The source code repository can be found at [https://github.com/mardem1/mardem-refactoring-perlcritic-policies](https://github.com/mardem1/mardem-refactoring-perlcritic-policies)
+The source code repository can be found at [https://github.com/mardem1/perl-critic-mardem](https://github.com/mardem1/perl-critic-mardem)
 
 ## AUTHOR
 
