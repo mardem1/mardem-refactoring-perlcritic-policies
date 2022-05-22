@@ -32,7 +32,7 @@ sub main
             'dir'          => 'Mardem-RefactoringPerlCriticPolicies',
             'modules'      => [
                 'Perl::Critic::Mardem',
-                'Mardem::RefactoringPerlCriticPolicies::Util',
+                'Perl::Critic::Mardem::Util',
                 'Perl::Critic::Policy::Mardem::ProhibitBlockComplexity',
                 'Perl::Critic::Policy::Mardem::ProhibitBlockComplexity',
                 'Perl::Critic::Policy::Mardem::ProhibitConditionComplexity',

@@ -19,7 +19,7 @@ BEGIN {
     use_ok( 'Perl::Critic::Mardem' )
         || print $error_txt;
 
-    use_ok( 'Mardem::RefactoringPerlCriticPolicies::Util' )
+    use_ok( 'Perl::Critic::Mardem::Util' )
         || print $error_txt;
 
     use_ok( 'Perl::Critic::Policy::Mardem::ProhibitConditionComplexity' )
@@ -46,7 +46,7 @@ diag(
 );
 
 diag(
-    "\nTesting Perl::Critic::Policy::Mardem::ProhibitConditionComplexity $Mardem::RefactoringPerlCriticPolicies::Util::VERSION, Perl $], $^X"
+    "\nTesting Perl::Critic::Policy::Mardem::ProhibitConditionComplexity $Perl::Critic::Mardem::Util::VERSION, Perl $], $^X"
 );
 
 diag(

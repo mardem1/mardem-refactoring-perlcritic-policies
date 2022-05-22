@@ -1,4 +1,4 @@
-package Mardem::RefactoringPerlCriticPolicies::Util;
+package Perl::Critic::Mardem::Util;
 
 use utf8;
 
@@ -92,7 +92,7 @@ __END__
 
 =head1 NAME
 
-Mardem::RefactoringPerlCriticPolicies::Util - Internal Util module!
+Perl::Critic::Mardem::Util - Internal Util module!
 
 =head1 DESCRIPTION
 

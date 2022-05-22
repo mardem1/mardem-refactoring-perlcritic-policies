@@ -20,7 +20,7 @@ ok( lives {
 );
 
 ok( lives {
-        require Mardem::RefactoringPerlCriticPolicies::Util;
+        require Perl::Critic::Mardem::Util;
     }
 );
 
