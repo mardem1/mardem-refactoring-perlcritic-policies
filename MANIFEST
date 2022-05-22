@@ -1,7 +1,7 @@
 Build.PL
 Changes
-lib/Mardem/RefactoringPerlCriticPolicies.pm
-lib/Mardem/RefactoringPerlCriticPolicies/Util.pm
+lib/Perl/Critic/Mardem.pm
+lib/Perl/Critic/Mardem/Util.pm
 lib/Perl/Critic/Policy/Mardem/ProhibitBlockComplexity.pm
 lib/Perl/Critic/Policy/Mardem/ProhibitConditionComplexity.pm
 lib/Perl/Critic/Policy/Mardem/ProhibitLargeBlock.pm
