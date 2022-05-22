@@ -157,7 +157,7 @@ Helper script to run all test files with perl to see all the test output.
 
 =head1 AFFILIATION
 
-This policy is part of L<Mardem::RefactoringPerlCriticPolicies>.
+This policy is part of L<Perl::Critic::Mardem>.
 
 =head1 AUTHOR
 

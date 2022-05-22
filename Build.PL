@@ -14,7 +14,7 @@ use Module::Build;
 Module::Build->VERSION('0.4004');
 
 my $builder = Module::Build->new(
-    'module_name'         => 'Mardem::RefactoringPerlCriticPolicies',
+    'module_name'         => 'Perl::Critic::Mardem',
     'dist_abstract'       => 'Some Perl::Critic::Policies to search for needed refactoring',
     'license'             => 'Perl_5',
     'dist_author'         => q{Markus Demml <mardem@cpan.com>},

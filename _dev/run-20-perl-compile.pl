@@ -156,7 +156,7 @@ Helper script to run a perl compile-check on all files.
 
 =head1 AFFILIATION
 
-This policy is part of L<Mardem::RefactoringPerlCriticPolicies>.
+This policy is part of L<Perl::Critic::Mardem>.
 
 =head1 AUTHOR
 

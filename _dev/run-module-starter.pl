@@ -31,7 +31,7 @@ sub main
             'distro'       => 'Mardem-RefactoringPerlCriticPolicies',
             'dir'          => 'Mardem-RefactoringPerlCriticPolicies',
             'modules'      => [
-                'Mardem::RefactoringPerlCriticPolicies',
+                'Perl::Critic::Mardem',
                 'Mardem::RefactoringPerlCriticPolicies::Util',
                 'Perl::Critic::Policy::Mardem::ProhibitBlockComplexity',
                 'Perl::Critic::Policy::Mardem::ProhibitBlockComplexity',
@@ -79,7 +79,7 @@ Reminder-Script to see, how the module/dist was started.
 
 =head1 AFFILIATION
 
-This policy is part of L<Mardem::RefactoringPerlCriticPolicies>.
+This policy is part of L<Perl::Critic::Mardem>.
 
 =head1 AUTHOR
 

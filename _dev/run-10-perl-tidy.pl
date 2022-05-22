@@ -95,8 +95,8 @@ sub run_perl_tidy
 {
     my ( $filepath ) = @_;
 
-    my $tidyrc = reduce_filepath_to_relapth( $THISDIR . '/.perltidyrc' );
-    my $failure = run_system_visible( 'perltidy', '-pro=' . $tidyrc , $filepath );
+    my $tidyrc  = reduce_filepath_to_relapth( $THISDIR . '/.perltidyrc' );
+    my $failure = run_system_visible( 'perltidy', '-pro=' . $tidyrc, $filepath );
 
     my $bak_file = $filepath . '.bak';
     ## no critic (ProhibitFiletest_f)
@@ -164,7 +164,7 @@ Helper script to run perltidy on all files.
 
 =head1 AFFILIATION
 
-This policy is part of L<Mardem::RefactoringPerlCriticPolicies>.
+This policy is part of L<Perl::Critic::Mardem>.
 
 =head1 AUTHOR
 

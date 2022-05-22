@@ -15,7 +15,7 @@ use Test2::Tools::Exception qw/lives/;
 plan 'tests' => 8;
 
 ok( lives {
-        require Mardem::RefactoringPerlCriticPolicies;
+        require Perl::Critic::Mardem;
     }
 );
 
@@ -74,7 +74,7 @@ Test-Script
 
 =head1 AFFILIATION
 
-This policy is part of L<Mardem::RefactoringPerlCriticPolicies>.
+This policy is part of L<Perl::Critic::Mardem>.
 
 =head1 AUTHOR
 

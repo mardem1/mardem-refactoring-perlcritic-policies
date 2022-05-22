@@ -1,4 +1,4 @@
-package Mardem::RefactoringPerlCriticPolicies;
+package Perl::Critic::Mardem;
 
 use utf8;
 
@@ -21,7 +21,7 @@ __END__
 
 =head1 NAME
 
-Mardem::RefactoringPerlCriticPolicies - Perl-Critic policies for simple and isolated Refactoring-Support.
+Perl::Critic::Mardem - Perl-Critic policies for simple and isolated Refactoring-Support.
 
 =head1 VERSION
 

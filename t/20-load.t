@@ -16,7 +16,7 @@ plan 'tests' => 8;
 BEGIN {
     my $error_txt = "Bail out!\n";
 
-    use_ok( 'Mardem::RefactoringPerlCriticPolicies' )
+    use_ok( 'Perl::Critic::Mardem' )
         || print $error_txt;
 
     use_ok( 'Mardem::RefactoringPerlCriticPolicies::Util' )
@@ -42,7 +42,7 @@ BEGIN {
 }
 
 diag(
-    "\nTesting Perl::Critic::Policy::Mardem::ProhibitConditionComplexity $Mardem::RefactoringPerlCriticPolicies::VERSION, Perl $], $^X"
+    "\nTesting Perl::Critic::Policy::Mardem::ProhibitConditionComplexity $Perl::Critic::Mardem::VERSION, Perl $], $^X"
 );
 
 diag(
@@ -93,7 +93,7 @@ Test-Script
 
 =head1 AFFILIATION
 
-This policy is part of L<Mardem::RefactoringPerlCriticPolicies>.
+This policy is part of L<Perl::Critic::Mardem>.
 
 =head1 AUTHOR
 
