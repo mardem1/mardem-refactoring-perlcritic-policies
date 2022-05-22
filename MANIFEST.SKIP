@@ -24,5 +24,5 @@ inc/
 nytprof.out
 pod2htm*.tmp
 pm_to_blib
-Mardem-RefactoringPerlCriticPolicies-*
-Mardem-RefactoringPerlCriticPolicies-*.tar.gz
+Perl-Critic-Mardem-*
+Perl-Critic-Mardem-*.tar.gz

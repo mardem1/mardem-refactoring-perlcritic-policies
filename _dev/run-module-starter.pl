@@ -28,8 +28,8 @@ sub main
             'minperl'      => '5.010',
             'author'       => 'mardem',
             'email'        => 'mardem1@users.noreply.github.com',
-            'distro'       => 'Mardem-RefactoringPerlCriticPolicies',
-            'dir'          => 'Mardem-RefactoringPerlCriticPolicies',
+            'distro'       => 'Perl-Critic-Mardem',
+            'dir'          => 'Perl-Critic-Mardem',
             'modules'      => [
                 'Perl::Critic::Mardem',
                 'Perl::Critic::Mardem::Util',

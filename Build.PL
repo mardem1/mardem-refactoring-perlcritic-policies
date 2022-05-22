@@ -48,7 +48,7 @@ my $builder = Module::Build->new(
     'recommends' => {
 
     },
-    'add_to_cleanup'     => [ 'Mardem-RefactoringPerlCriticPolicies-*' ],
+    'add_to_cleanup'     => [ 'Perl-Critic-Mardem-*' ],
 );
 
 $builder->create_build_script();
