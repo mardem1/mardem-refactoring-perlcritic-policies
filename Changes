@@ -5,6 +5,7 @@ Revision history for Perl-Critic-Mardem
 
     * fixed backslash to forward slash in build.pl
     * changed name in readme
+    * fixed line endings of Perl-Files to LF
 
 0.02 2022-05-22
 
