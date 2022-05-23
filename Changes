@@ -3,7 +3,7 @@ Revision history for Perl-Critic-Mardem
 
 0.03 2022-05-23
 
-    * fixed backslash to forward slash in build.pl
+    * fixed backslash to forward slash in build.pl Thanks to Slaven Rezić (SREZIC) for reporting (RT ID #142880)
     * changed name in readme
     * fixed line endings of Perl-Files to LF
 
