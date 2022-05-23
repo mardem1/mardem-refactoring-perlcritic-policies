@@ -7,7 +7,7 @@ use 5.010;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Readonly;
 use Perl::Critic::Utils qw( is_hash_key $SEVERITY_MEDIUM );
