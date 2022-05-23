@@ -7,7 +7,7 @@ use 5.010;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Module::Build;
 
@@ -18,7 +18,7 @@ my $builder = Module::Build->new(
     'dist_abstract'       => 'Some Perl::Critic::Policies to search for needed refactoring',
     'license'             => 'Perl_5',
     'dist_author'         => q{Markus Demml <mardem@cpan.com>},
-    'dist_version_from'   => 'lib\Perl\Critic\Mardem.pm',
+    'dist_version_from'   => 'lib/Perl/Critic/Mardem.pm',
     'release_status'      => 'stable',
     'configure_requires' => {
         'Module::Build' => '0.4004',
