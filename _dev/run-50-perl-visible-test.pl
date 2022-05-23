@@ -48,8 +48,8 @@ sub reduce_filepath_to_relapth
 
 sub get_only_test_files
 {
-
-    my $include_test = File::Find::Rule->new()->file()->name( '*.t' );
+    ## no critic (RegularExpressions::RequireDefault)
+    my $include_test = File::Find::Rule->new()->file()->name( qr/[.][t]$/sxmio );
 
     my $search = File::Find::Rule->new()->or( $include_test );
 
@@ -167,8 +167,8 @@ Markus Demml, mardem@cpan.com
 
 Copyright (c) 2022, Markus Demml
 
-This library is free software; you can redistribute it and/or modify it 
-under the same terms as the Perl 5 programming language system itself. 
+This library is free software; you can redistribute it and/or modify it
+under the same terms as the Perl 5 programming language system itself.
 The full text of this license can be found in the LICENSE file included
 with this module.
 

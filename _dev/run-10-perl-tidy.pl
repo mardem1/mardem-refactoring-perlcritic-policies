@@ -51,7 +51,8 @@ sub get_all_files
     ## no critic (ProhibitLongChainsOfMethodCalls)
     my $exclude_self = File::Find::Rule->new()->file()->name( 'run-10-perl-tidy.pl' )->prune()->discard();
 
-    my $include_all = File::Find::Rule->new()->file()->name( '*.pl', '*.pm', '*.t' );
+    ## no critic (RegularExpressions::RequireDefault)
+    my $include_all = File::Find::Rule->new()->file()->name( qr/[.](t|pm|pl)$/sxmio );
 
     my $search = File::Find::Rule->new()->or( $exclude_self, $include_all );
 
@@ -174,8 +175,8 @@ Markus Demml, mardem@cpan.com
 
 Copyright (c) 2022, Markus Demml
 
-This library is free software; you can redistribute it and/or modify it 
-under the same terms as the Perl 5 programming language system itself. 
+This library is free software; you can redistribute it and/or modify it
+under the same terms as the Perl 5 programming language system itself.
 The full text of this license can be found in the LICENSE file included
 with this module.
 
