@@ -63,7 +63,7 @@ sub violates
     my $opt_condition = q{(?:(?:if|unless)\s*[(]?\s*.+\s*[)]?\s*)?};
 
     # regex /aa requires Perl 5.14
-    my $regex         = qr/^\s*$return\s*$value\s*$opt_condition\s*;/ixmso; ## no critic (RegularExpressions::RequireDefault)
+    my $regex = qr/^\s*$return\s*$value\s*$opt_condition\s*;/ixmso;    ## no critic (RegularExpressions::RequireDefault)
 
     if ( $return_line_content !~ $regex ) {
         return;
