@@ -4,6 +4,7 @@ Revision history for Perl-Critic-Mardem
 0.03 2022-05-23
 
     * fixed backslash to forward slash in build.pl
+    * changed name in readme
 
 0.02 2022-05-22
 
