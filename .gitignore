@@ -55,6 +55,7 @@ inc/
 
 /.project
 /.includepath
+/.settings/
 /.vscode/
 /.idea/
 **/*.bak
