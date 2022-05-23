@@ -3,6 +3,7 @@ ignore.txt
 .gitattributes
 .includepath
 .project
+.settings/
 
 .git/
 
