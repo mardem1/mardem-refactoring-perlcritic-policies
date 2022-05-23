@@ -1,5 +1,5 @@
 
-# Mardem-PerlRefactoringSupport
+# Perl-Critic-Mardem
 
 ## DESCRIPTION
 
