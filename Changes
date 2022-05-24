@@ -1,6 +1,10 @@
 Revision history for Perl-Critic-Mardem
 ========================================
 
+0.04 2022-05-24
+
+    * removed all regex /aa (also in tests) to support perl 5.10 and 5.12
+
 0.03 2022-05-23
 
     * fixed backslash to forward slash in build.pl Thanks to Slaven Rezić (SREZIC) for reporting (RT ID #142880)
