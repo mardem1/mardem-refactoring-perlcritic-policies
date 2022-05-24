@@ -48,7 +48,6 @@ sub reduce_filepath_to_relapth
 
 sub get_only_test_files
 {
-    ## no critic (RegularExpressions::RequireDefault)
     my $include_test = File::Find::Rule->new()->file()->name( qr/[.][t]$/sxmio );
 
     my $search = File::Find::Rule->new()->or( $include_test );

@@ -48,7 +48,6 @@ sub reduce_filepath_to_relapth
 
 sub get_all_files
 {
-    ## no critic (RegularExpressions::RequireDefault)
     my $include_all = File::Find::Rule->new()->file()->name( qr/[.](t|pm|pl)$/sxmio );
 
     my $search = File::Find::Rule->new()->or( $include_all );
