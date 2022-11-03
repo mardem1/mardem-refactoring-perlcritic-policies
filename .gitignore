@@ -62,3 +62,4 @@ inc/
 **/*.tdy
 
 /_dev/notes.txt
+/_Deparsed_XSubs.pm
