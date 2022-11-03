@@ -10,8 +10,12 @@ perl Build.PL
 ./Build distcheck
 ./Build disttest
 
+cover -delete
+set HARNESS_PERL_SWITCHES=-MDevel::Cover=-ignore,\.t,+select,.*Mardem.*\.pm
+
 ./Build test
 ./Build testcover
+
 cover -delete
 
 ./Build distinstall
