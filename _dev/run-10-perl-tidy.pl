@@ -14,6 +14,7 @@ use Path::This qw( $THISDIR );
 use Cwd qw( getcwd abs_path );
 use File::Find::Rule;
 use English qw( -no_match_vars );
+use Perl::Tidy;
 
 Readonly::Scalar my $SYSTEM_START_FAILURE     => -1;
 Readonly::Scalar my $SYSTEM_CALL_SIGNAL_BIT   => 127;
@@ -66,7 +67,6 @@ sub run_system_visible
 {
     my ( @params ) = @_;
 
-    say q{};
     say 'execute ' . ( join q{ }, @params );
 
     my $failure = system @params;
@@ -86,7 +86,20 @@ sub run_system_visible
         }
     }
 
-    say q{};
+    return !!$failure;
+}
+
+sub run_perl_tidy_module
+{
+    my ( @params ) = @_;
+
+    say 'execute ' . ( join q{ }, 'perltidy', @params );
+
+    my $failure = Perl::Tidy::perltidy( @params );
+
+    if ( $failure ) {
+        say 'perl tidy failed';
+    }
 
     return !!$failure;
 }
@@ -95,8 +108,16 @@ sub run_perl_tidy
 {
     my ( $filepath ) = @_;
 
-    my $tidyrc  = reduce_filepath_to_relapth( $THISDIR . '/.perltidyrc' );
-    my $failure = run_system_visible( 'perltidy', '-pro=' . $tidyrc, $filepath );
+    say q{};
+
+    my $tidyrc = reduce_filepath_to_relapth( $THISDIR . '/.perltidyrc' );
+
+    # my $failure = run_system_visible( 'perltidy', '-pro=' . $tidyrc, $filepath );
+
+    my $failure = run_perl_tidy_module(
+        'source'     => $filepath,
+        'perltidyrc' => $tidyrc,
+    );
 
     my $bak_file = $filepath . '.bak';
     ## no critic (ProhibitFiletest_f)
@@ -104,6 +125,8 @@ sub run_perl_tidy
         say 'unlink: ' . $bak_file;
         unlink $bak_file;
     }
+
+    say q{};
 
     return !!$failure;
 }
