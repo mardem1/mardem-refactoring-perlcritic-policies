@@ -14,11 +14,14 @@ use Path::This qw( $THISDIR );
 use Cwd qw( getcwd abs_path );
 use File::Find::Rule;
 use English qw( -no_match_vars );
+use Time::HiRes qw( time );
 
 Readonly::Scalar my $SYSTEM_START_FAILURE     => -1;
 Readonly::Scalar my $SYSTEM_CALL_SIGNAL_BIT   => 127;
 Readonly::Scalar my $SYSTEM_CALL_COREDUMP_BIT => 127;
 Readonly::Scalar my $EXITCODE_OFFSET          => 8;
+
+my %file_duration = ();
 
 sub reduce_filepath_to_relapth
 {
@@ -63,7 +66,6 @@ sub run_system_visible
 {
     my ( @params ) = @_;
 
-    say q{};
     say 'execute ' . ( join q{ }, @params );
 
     my $failure = system @params;
@@ -83,8 +85,6 @@ sub run_system_visible
         }
     }
 
-    say q{};
-
     return !!$failure;
 }
 
@@ -92,7 +92,18 @@ sub run_compile_test
 {
     my ( $filepath ) = @_;
 
+    say q{};
+
+    my $time_start = time();
+
     my $failure = run_system_visible( 'perl', '-c', $filepath );
+
+    my $time_end = time();
+    my $duration = $time_end - $time_start;
+    printf( "%6.4f Seconds\n", $duration );
+    $file_duration{ $filepath } = $duration;
+
+    say q{};
 
     return !!$failure;
 }
@@ -124,6 +135,13 @@ sub main
         say q{};
     }
     else {
+        say q{};
+        say q{};
+
+        foreach my $filepath ( sort { $file_duration{ $a } <=> $file_duration{ $b } } keys %file_duration ) {
+            printf( "%6.4f - %s\n", $file_duration{ $filepath }, $filepath );
+        }
+
         say q{};
         say q{};
 
