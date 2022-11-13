@@ -61,5 +61,7 @@ inc/
 **/*.bak
 **/*.tdy
 
+/*.log
+
 /_dev/notes.txt
 /_Deparsed_XSubs.pm
