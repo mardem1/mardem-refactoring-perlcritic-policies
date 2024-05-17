@@ -84,10 +84,6 @@ __END__
 
 =encoding utf8
 
-=head1 ATTENTION
-
-... todo not yet implemented ...
-
 =head1 NAME
 
 Perl::Critic::Policy::Mardem::ProhibitLargeFile
