@@ -42,6 +42,8 @@
 -output-line-ending=unix
 #-ple # preserve-line-endings
 
+-enc=utf8
+
 -it=2 # iterations
 
 -b # inplace changes
