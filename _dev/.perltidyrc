@@ -43,6 +43,7 @@
 -it=2 # iterations
 
 -b # inplace changes
+-bext=/ # delete backup if successful
 
 # code with much deep nested idents - don't count leading whitespaces
 # -vmll # variable-maximum-line-length
