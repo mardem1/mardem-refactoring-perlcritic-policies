@@ -51,3 +51,6 @@
 
 # Allman / BSD Style
 # -bl # opening-brace-on-new-line
+
+# -se
+# -opt
