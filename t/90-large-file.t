@@ -17,7 +17,7 @@ use Test::More;
 
 Readonly::Scalar my $POLICY_NAME => 'Perl::Critic::Policy::Mardem::ProhibitLargeFile';
 
-plan 'tests' => 1;
+plan 'tests' => 2;
 
 #####
 
@@ -76,6 +76,18 @@ sub _get_description_from_violations
     my @violations = _check_perl_critic( \$code );
 
     ok !@violations, 'no violation with empty code';
+}
+
+#####
+
+{
+    my $code = <<'END_OF_STRING';
+# some one line comment
+END_OF_STRING
+
+    my @violations = _check_perl_critic( \$code );
+
+    ok !@violations, 'no violation with one line comment';
 }
 
 #####
