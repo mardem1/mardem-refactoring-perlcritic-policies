@@ -9,7 +9,7 @@ use warnings;
 
 our $VERSION = '0.04';
 
-use Cwd qw( abs_path );
+use Cwd        qw( abs_path );
 use Path::This qw( $THISDIR );
 use Test::More;
 use English qw( -no_match_vars );
