@@ -51,9 +51,13 @@ sub reduce_filepath_to_relapth
 
 sub get_all_files
 {
+    ## no critic (ProhibitLongChainsOfMethodCalls)
+
+    my $exlude_xsubs = File::Find::Rule->new()->file()->name( '_Deparsed_XSubs.pm' )->prune()->discard();
+
     my $include_all = File::Find::Rule->new()->file()->name( qr/[.](t|pm|pl)$/sxmio );
 
-    my $search = File::Find::Rule->new()->or( $include_all );
+    my $search = File::Find::Rule->new()->or( $exlude_xsubs, $include_all );
 
     my @files = $search->in( abs_path( $THISDIR . '/..' ) );
 
