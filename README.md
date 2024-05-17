@@ -22,6 +22,7 @@ but these are for some bigger scans, so these new policies should check (or begi
 1. **[ProhibitLargeBlock](lib/Perl/Critic/Policy/Mardem/ProhibitLargeBlock.pm)** - large code block as statement count "{...}"
 1. **[ProhibitBlockComplexity](lib/Perl/Critic/Policy/Mardem/ProhibitBlockComplexity.pm)** - code block complexity "{...}"
 1. **[ProhibitLargeSub](lib/Perl/Critic/Policy/Mardem/ProhibitLargeSub.pm)** - large subs as statement count
+1. **[ProhibitLargeFile](lib/Perl/Critic/Policy/Mardem/ProhibitLargeFile.pm)** - large files as line count - NOT YET IMPLEMENTED!
 
 ## INSTALLATION
 
@@ -50,7 +51,7 @@ Markus Demml, mardem@cpan.com
 
 ## LICENSE AND COPYRIGHT
 
-Copyright (c) 2022, Markus Demml
+Copyright (c) 2024, Markus Demml
 
 This library is free software; you can redistribute it and/or modify it
 under the same terms as the Perl 5 programming language system itself.
