@@ -22,7 +22,7 @@ ProhibitManyConditionsInSub - subs has many conditionals "if, while, for, ..."
 ProhibitLargeBlock - large code block as statement count "{...}"
 ProhibitBlockComplexity - code block complexity "{...}"
 ProhibitLargeSub - large subs as statement count
-ProhibitLargeFile - large files as line count - NOT YET IMPLEMENTED!
+ProhibitLargeFile - large files as line count
 
 INSTALLATION
 
