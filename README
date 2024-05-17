@@ -23,6 +23,7 @@ ProhibitLargeBlock - large code block as statement count "{...}"
 ProhibitBlockComplexity - code block complexity "{...}"
 ProhibitLargeSub - large subs as statement count
 ProhibitLargeFile - large files as line count
+ProhibitFileSize - large files as byte or char count
 
 INSTALLATION
 
