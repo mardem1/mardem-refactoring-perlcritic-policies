@@ -34,13 +34,44 @@ sub applies_to
 
 sub supported_parameters
 {
-    return ();
+    return (
+        {   'name'            => 'line_count_limit',
+            'description'     => 'The maximum line count allowed.',
+            'default_string'  => '999',
+            'behavior'        => 'integer',
+            'integer_minimum' => 1,
+        },
+    );
 }
 
 sub violates
 {
-    # ToDo: new feature to implement
-    return;
+    my ( $self, $elem, undef ) = @_;
+
+    my $filename = '__UNKNOWN__';
+
+    {
+        local $@;
+        eval { $filename = $elem->filename() || $filename; };
+        if ( $@ ) {
+            # Note: warn ?
+        }
+    }
+
+    my $s = $elem->serialize();
+    if ( !defined $s || q{} eq $s ) {
+        return;
+    }
+
+    my @matches = $s =~ /\n/og;
+    my $lines   = scalar @matches;
+
+    if ( $lines <= $self->{ '_line_count_limit' } ) {
+        return;
+    }
+
+    my $desc = qq<File "$filename" with high line count ($lines)>;
+    return $self->violation( $desc, $EXPL, $elem );
 }
 
 1;
