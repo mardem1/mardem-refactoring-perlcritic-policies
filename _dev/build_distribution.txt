@@ -6,24 +6,25 @@ set TEST_AUTHOR=1
 prove -b t/ xt/
 
 perl Build.PL
-./Build
-./Build distcheck
-./Build disttest
+perl ./Build
+perl ./Build distcheck
+perl ./Build disttest
 
 cover -delete
 set HARNESS_PERL_SWITCHES=-MDevel::Cover=-ignore,\.t,+select,.*Mardem.*\.pm
 
-./Build test
-./Build testcover
+perl ./Build test
+perl ./Build testcover
 
 cover -delete
 
-./Build distinstall
-./Build dist
-./Build clean
-./Build distclean
+perl ./Build distinstall
+perl ./Build dist
+
+perl ./Build clean
+perl ./Build distclean
 
 perl Build.PL
-./Build
-./Build test
-./Build install
+perl ./Build
+perl ./Build test
+perl ./Build install
