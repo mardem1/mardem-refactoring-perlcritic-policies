@@ -7,7 +7,11 @@ use 5.010;
 use strict;
 use warnings;
 
-our $VERSION = '0.05';
+# come comment
+
+my $test_string = 'test_content';
+
+my $test_int = 42;
 
 __END__
 

@@ -156,8 +156,8 @@ END_OF_STRING
 
     my $desc = _get_description_from_violations( @violations );
 
-    like $desc, qr/File\s".+[\/\\]Some-Script\.pl"\swith\shigh\sline\scount\s[(]45[)]/ixmso,
-        'description correct count 45 lines in Some-Script';
+    like $desc, qr/File\s".+[\/\\]Some-Script\.pl"\swith\shigh\sline\scount\s[(]49[)]/ixmso,
+        'description correct count 49 lines in Some-Script';
 }
 
 #####

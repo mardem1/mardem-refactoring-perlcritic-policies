@@ -170,8 +170,8 @@ END_OF_STRING
 
     my $desc = _get_description_from_violations( @violations );
 
-    like $desc, qr/File\s".+[\/\\]Some-Script\.pl"\swith\shigh\sbyte\scount\s[(]677[)]/ixmso,
-        'description correct count 677 bytes in Some-Script';
+    like $desc, qr/File\s".+[\/\\]Some-Script\.pl"\swith\shigh\sbyte\scount\s[(]720[)]/ixmso,
+        'description correct count 720 bytes in Some-Script';
 }
 
 #####
