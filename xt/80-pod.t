@@ -14,7 +14,7 @@ use Path::This qw( $THISDIR );
 use Test::More;
 use English qw( -no_match_vars );
 
-if ( !$ENV{ 'RELEASE_TESTING' } || !$ENV{ 'TEST_AUTHOR' } ) {
+if ( !$ENV{ 'TEST_AUTHOR' } ) {
     plan 'skip_all' => 'Author tests not required for installation';
 }
 else {
