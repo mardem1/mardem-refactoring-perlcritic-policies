@@ -3,10 +3,10 @@
 
 ## DESCRIPTION
 
-Perl-Critic Policies for simple and isolated Refactoring-Support.
+Perl-Critic policies for isolated Refactoring-Support.
 
-This Perl-Crictic Policy-Modules should help where to start a safe
-refactoring in old leagacy Perl code.
+This Perl-Critic Policy-Modules should help where to start a safe
+refactoring in old legacy Perl code.
 
 The McCabe complexity check within the standard Perl-Critic Module are a good
 overall starting point see:

@@ -21,7 +21,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Mardem - Perl-Critic policies for simple and isolated Refactoring-Support.
+Perl::Critic::Mardem - Perl-Critic policies for isolated Refactoring-Support.
 
 =head1 VERSION
 
@@ -29,8 +29,8 @@ Version 0.05
 
 =head1 DESCRIPTION
 
-This Perl-Crictic Policy-Modules should help where to start a safe
-refactoring in old leagacy Perl code.
+This Perl-Critic Policy-Modules should help where to start a safe
+refactoring in old legacy Perl code.
 
 The McCabe complexity check within the standard Perl-Critic Module are a good
 overall starting point see:
@@ -68,6 +68,14 @@ code block complexity "{...}"
 =head2 L<Perl::Critic::Policy::Mardem::ProhibitLargeSub>
 
 large subs as statement count
+
+=head2 L<Perl::Critic::Policy::Mardem::ProhibitLargeFile>
+
+large files as line count
+
+=head2 L<Perl::Critic::Policy::Mardem::ProhibitFileSize>
+
+large files as byte or char count
 
 =head1 AFFILIATION
 
