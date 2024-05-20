@@ -37,6 +37,9 @@ set HARNESS_PERL_SWITCHES=
 set RELEASE_TESTING=1
 set TEST_AUTHOR=0
 
+perl Build.PL
+perl ./Build
+perl ./Build test
 perl ./Build disttest
 perl ./Build dist
 perl ./Build distinstall
@@ -46,7 +49,7 @@ perl ./Build distinstall
 perl ./Build clean
 perl ./Build realclean
 
-### manual install install created dist
+### manual install created dist
 
 perl Build.PL
 perl ./Build
