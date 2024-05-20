@@ -56,3 +56,9 @@ perl ./Build
 perl ./Build test
 perl ./Build install
 perl ./Build clean
+
+### PERL CPAN PAUSE
+
+upload TAR
+* https://pause.perl.org/
+* https://metacpan.org/
