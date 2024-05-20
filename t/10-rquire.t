@@ -12,7 +12,7 @@ our $VERSION = '0.05';
 use Test2::V0;
 use Test2::Tools::Exception qw/lives/;
 
-plan 'tests' => 8;
+plan 'tests' => 10;
 
 ok( lives {
         require Perl::Critic::Mardem;
@@ -25,22 +25,32 @@ ok( lives {
 );
 
 ok( lives {
-        require Perl::Critic::Policy::Mardem::ProhibitConditionComplexity;
-    }
-);
-
-ok( lives {
         require Perl::Critic::Policy::Mardem::ProhibitBlockComplexity;
     }
 );
 
 ok( lives {
-        require Perl::Critic::Policy::Mardem::ProhibitLargeSub;
+        require Perl::Critic::Policy::Mardem::ProhibitConditionComplexity;
+    }
+);
+
+ok( lives {
+        require Perl::Critic::Policy::Mardem::ProhibitFileSize;
     }
 );
 
 ok( lives {
         require Perl::Critic::Policy::Mardem::ProhibitLargeBlock;
+    }
+);
+
+ok( lives {
+        require Perl::Critic::Policy::Mardem::ProhibitLargeFile;
+    }
+);
+
+ok( lives {
+        require Perl::Critic::Policy::Mardem::ProhibitLargeSub;
     }
 );
 
