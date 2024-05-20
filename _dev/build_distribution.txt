@@ -1,4 +1,6 @@
 
+git archive --format zip --output ./perl-critic-mardem.zip HEAD
+
 set PERL5LIB= ...
 set RELEASE_TESTING=1
 set TEST_AUTHOR=1
