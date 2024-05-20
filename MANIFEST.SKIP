@@ -4,6 +4,7 @@ ignore.txt
 .includepath
 .project
 .settings/
+.idea/
 
 .git/
 
@@ -26,3 +27,4 @@ pod2htm*.tmp
 pm_to_blib
 Perl-Critic-Mardem-*
 Perl-Critic-Mardem-*.tar.gz
+_Deparsed_XSubs.pm
