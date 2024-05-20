@@ -27,8 +27,7 @@ but these are for some bigger scans, so these new policies should check (or begi
 
 ## INSTALLATION
 
-To install this module via CAPN
-(see [Perl::Critic::Mardem](https://metacpan.org/pod/Perl::Critic::Mardem) on MetaCPAN), run the following commands:
+To install this module via CAPN, run the following commands:
 
 ```
   cpanm Perl::Critic::Mardem
@@ -45,13 +44,14 @@ To install this module from source, run the following commands:
 
 ## SUPPORT AND DOCUMENTATION
 
-Each policy has its own detailed documentation.
+Each policy has its own detailed documentation see
+[Perl::Critic::Mardem](https://metacpan.org/pod/Perl::Critic::Mardem) on MetaCPAN.
 
 ## BUG REPORTS
 
-Please report bugs on GitHub.
+Please report bugs as [GitHub-Issue](https://github.com/mardem1/perl-critic-mardem/issues).
 
-The source code repository can be found at [https://github.com/mardem1/perl-critic-mardem](https://github.com/mardem1/perl-critic-mardem)
+The source code repository can be found on [GitHub](https://github.com/mardem1/perl-critic-mardem).
 
 ## CHANGELOG
 
