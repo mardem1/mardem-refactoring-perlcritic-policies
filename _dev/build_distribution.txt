@@ -1,5 +1,9 @@
 
+### export from git
+
 git archive --format zip --output ./Perl-Critic-Mardem-Src.zip HEAD
+
+### src test with exported version
 
 set PERL5LIB= ...
 
@@ -8,31 +12,44 @@ set TEST_AUTHOR=1
 
 prove -b t/ xt/
 
-set RELEASE_TESTING=1
-set TEST_AUTHOR=0
+### build
 
 perl ./_dev/run-module-starter.pl
 
 perl Build.PL
 perl ./Build
+perl ./Build manifest
+perl ./Build distmeta
 perl ./Build distcheck
-perl ./Build disttest
+
+### users build test
+
+perl ./Build test
 
 cover -delete
 set HARNESS_PERL_SWITCHES=-MDevel::Cover=-ignore,\.t,+select,.*Mardem.*\.pm
-
-perl ./Build test
 perl ./Build testcover
-
 cover -delete
+set HARNESS_PERL_SWITCHES=
 
-perl ./Build distinstall
+### release test with meta check etc ...
+
+set RELEASE_TESTING=1
+set TEST_AUTHOR=0
+
+perl ./Build disttest
 perl ./Build dist
+perl ./Build distinstall
+
+### cleanup build
 
 perl ./Build clean
-perl ./Build distclean
+perl ./Build realclean
+
+### manual install install created dist
 
 perl Build.PL
 perl ./Build
 perl ./Build test
 perl ./Build install
+perl ./Build clean
