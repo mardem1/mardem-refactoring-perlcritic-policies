@@ -1,8 +1,11 @@
 ignore.txt
 .gitignore
+.gitattributes
 .includepath
 .project
 .settings/
+.idea/
+
 .git/
 
 _dev/
@@ -25,3 +28,4 @@ pod2htm*.tmp
 pm_to_blib
 Perl-Critic-Mardem-*
 Perl-Critic-Mardem-*.tar.gz
+_Deparsed_XSubs.pm
