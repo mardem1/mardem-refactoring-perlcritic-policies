@@ -9,12 +9,12 @@ ignore.txt
 .git/
 
 _dev/
+Perl-Critic-Mardem-Src/
 
 Makefile
 Makefile.old
 Build
 Build.bat
-META.*
 MYMETA.*
 .build/
 _build/
