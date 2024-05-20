@@ -2,10 +2,16 @@
 git archive --format zip --output ./Perl-Critic-Mardem-Src.zip HEAD
 
 set PERL5LIB= ...
-set RELEASE_TESTING=1
+
+set RELEASE_TESTING=0
 set TEST_AUTHOR=1
 
 prove -b t/ xt/
+
+set RELEASE_TESTING=1
+set TEST_AUTHOR=0
+
+perl ./_dev/run-module-starter.pl
 
 perl Build.PL
 perl ./Build
