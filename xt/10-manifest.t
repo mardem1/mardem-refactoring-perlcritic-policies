@@ -12,8 +12,8 @@ our $VERSION = '0.05';
 use Test::More;
 use English qw( -no_match_vars );
 
-if ( !$ENV{ 'RELEASE_TESTING' } || !$ENV{ 'TEST_AUTHOR' } ) {
-    plan 'skip_all' => 'Author tests not required for installation';
+if ( !$ENV{ 'RELEASE_TESTING' } && !$ENV{ 'TEST_AUTHOR' } ) {
+    plan 'skip_all' => 'Release and Author tests not required for installation';
 }
 else {
     my $min_tcm = 0.9;                          ## no critic (ProhibitMagicNumbers)
