@@ -49,13 +49,13 @@ but these are for some bigger scans, so these new policies should check (or begi
 
 code block complexity "{...}"
 
-=head2 L<Perl::Critic::Policy::Mardem::ProhibitReturnBooleanAsInt>
-
-return boolean as int "return 1;"
-
 =head2 L<Perl::Critic::Policy::Mardem::ProhibitConditionComplexity>
 
 condition complexity "if/while/for/... (...){}"
+
+=head2 L<Perl::Critic::Policy::Mardem::ProhibitReturnBooleanAsInt>
+
+return boolean as int "return 1;"
 
 =head2 L<Perl::Critic::Policy::Mardem::ProhibitManyConditionsInSub>
 
