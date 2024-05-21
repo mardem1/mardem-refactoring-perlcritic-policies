@@ -97,7 +97,7 @@ Perl::Critic::Mardem::Util - Internal Util module!
 =head1 DESCRIPTION
 
 Util module with internal subroutines for the
-L<Perl::Critic::Policy::Mardem>> modules.
+L<Perl::Critic::Policy::Mardem> modules.
 
 =head1 AFFILIATION
 
