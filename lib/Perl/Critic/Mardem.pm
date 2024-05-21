@@ -53,6 +53,10 @@ code block complexity "{...}"
 
 condition complexity "if/while/for/... (...){}"
 
+=head2 L<Perl::Critic::Policy::Mardem::ProhibitFileSize>
+
+large files as byte or char count
+
 =head2 L<Perl::Critic::Policy::Mardem::ProhibitReturnBooleanAsInt>
 
 return boolean as int "return 1;"
@@ -72,10 +76,6 @@ large subs as statement count
 =head2 L<Perl::Critic::Policy::Mardem::ProhibitLargeFile>
 
 large files as line count
-
-=head2 L<Perl::Critic::Policy::Mardem::ProhibitFileSize>
-
-large files as byte or char count
 
 =head1 AFFILIATION
 
