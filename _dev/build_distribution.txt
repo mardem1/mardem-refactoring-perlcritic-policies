@@ -1,4 +1,8 @@
 
+### start new dist
+
+perl ./_dev/run-module-starter.pl
+
 ### export from git
 
 git archive --format zip --output ./Perl-Critic-Mardem-Src.zip HEAD
@@ -13,8 +17,6 @@ set TEST_AUTHOR=1
 prove -b t/ xt/
 
 ### build
-
-perl ./_dev/run-module-starter.pl
 
 perl Build.PL
 perl ./Build
