@@ -45,6 +45,10 @@ overall starting point see:
 
 but these are for some bigger scans, so these new policies should check (or begin) in smaller chunks:
 
+=head2 L<Perl::Critic::Policy::Mardem::ProhibitBlockComplexity>
+
+code block complexity "{...}"
+
 =head2 L<Perl::Critic::Policy::Mardem::ProhibitReturnBooleanAsInt>
 
 return boolean as int "return 1;"
@@ -60,10 +64,6 @@ subs has many conditionals "if, while, for, ..."
 =head2 L<Perl::Critic::Policy::Mardem::ProhibitLargeBlock>
 
 large code block as statement count "{...}"
-
-=head2 L<Perl::Critic::Policy::Mardem::ProhibitBlockComplexity>
-
-code block complexity "{...}"
 
 =head2 L<Perl::Critic::Policy::Mardem::ProhibitLargeSub>
 
