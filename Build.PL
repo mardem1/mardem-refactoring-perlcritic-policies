@@ -47,8 +47,8 @@ my $builder = Module::Build->new(
     'add_to_cleanup' => [ 'Perl-Critic-Mardem-*' ],
     'meta_merge'     => {
         'resources' => {
-            # 'bugtracker' => 'https://github.com/mardem1/perl-critic-mardem/issues',
-            # 'homepage'   => 'https://github.com/mardem1/perl-critic-mardem',
+            'bugtracker' => 'https://github.com/mardem1/perl-critic-mardem/issues',
+            'homepage'   => 'https://github.com/mardem1/perl-critic-mardem',
             'repository' => 'git://github.com/mardem1/perl-critic-mardem.git',
         },
     },
