@@ -108,7 +108,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Policy::Mardem::ProhibitFileSize
+Perl::Critic::Policy::Mardem::ProhibitFileSize - large files as byte or char count
 
 =head1 DESCRIPTION
 

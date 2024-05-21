@@ -95,7 +95,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Policy::Mardem::ProhibitManyConditionsInSub
+Perl::Critic::Policy::Mardem::ProhibitManyConditionsInSub - subs has many conditionals "if, while, for, ..."
 
 =head1 DESCRIPTION
 

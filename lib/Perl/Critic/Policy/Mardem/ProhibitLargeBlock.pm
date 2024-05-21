@@ -86,7 +86,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Policy::Mardem::ProhibitLargeBlock
+Perl::Critic::Policy::Mardem::ProhibitLargeBlock - large code block as statement count "{...}"
 
 =head1 DESCRIPTION
 

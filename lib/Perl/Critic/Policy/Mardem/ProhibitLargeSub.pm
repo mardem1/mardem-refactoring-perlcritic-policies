@@ -83,7 +83,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Policy::Mardem::ProhibitLargeSub
+Perl::Critic::Policy::Mardem::ProhibitLargeSub - large subs as statement count
 
 =head1 DESCRIPTION
 

@@ -86,7 +86,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Policy::Mardem::ProhibitLargeFile
+Perl::Critic::Policy::Mardem::ProhibitLargeFile - large files as line count
 
 =head1 DESCRIPTION
 

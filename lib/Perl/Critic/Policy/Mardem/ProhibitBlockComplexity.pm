@@ -81,7 +81,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Policy::Mardem::ProhibitBlockComplexity
+Perl::Critic::Policy::Mardem::ProhibitBlockComplexity - code block complexity "{...}"
 
 =head1 DESCRIPTION
 

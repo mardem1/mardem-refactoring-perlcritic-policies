@@ -83,7 +83,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Policy::Mardem::ProhibitReturnBooleanAsInt
+Perl::Critic::Policy::Mardem::ProhibitReturnBooleanAsInt - return boolean as int "return 1;"
 
 =head1 DESCRIPTION
 

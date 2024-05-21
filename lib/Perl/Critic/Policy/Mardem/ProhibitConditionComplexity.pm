@@ -89,7 +89,7 @@ __END__
 
 =head1 NAME
 
-Perl::Critic::Policy::Mardem::ProhibitConditionComplexity
+Perl::Critic::Policy::Mardem::ProhibitConditionComplexity - condition complexity "if/while/for/... (...){}"
 
 =head1 DESCRIPTION
 
