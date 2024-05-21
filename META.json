@@ -90,6 +90,10 @@
    },
    "release_status" : "stable",
    "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/mardem1/perl-critic-mardem/issues"
+      },
+      "homepage" : "https://github.com/mardem1/perl-critic-mardem",
       "license" : [
          "http://dev.perl.org/licenses/"
       ],

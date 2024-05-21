@@ -63,6 +63,8 @@ requires:
   Readonly: '0'
   perl: '5.01'
 resources:
+  bugtracker: https://github.com/mardem1/perl-critic-mardem/issues
+  homepage: https://github.com/mardem1/perl-critic-mardem
   license: http://dev.perl.org/licenses/
   repository: git://github.com/mardem1/perl-critic-mardem.git
 version: '0.05'
