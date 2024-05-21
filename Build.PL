@@ -41,10 +41,8 @@ my $builder = Module::Build->new(
         'Perl::Critic::Utils'         => 0,
         'Perl::Critic::Utils::McCabe' => 0,
     },
-    'recommends' => {
-
-    },
-    'add_to_cleanup' => [ 'Perl-Critic-Mardem-*' ],
+    'recommends'     => {},
+    'add_to_cleanup' => [ 'Perl-Critic-Mardem-*', 'MANIFEST*.bak', 'blib/', 'cover_db/' ],
     'meta_merge'     => {
         'resources' => {
             'bugtracker' => 'https://github.com/mardem1/perl-critic-mardem/issues',
