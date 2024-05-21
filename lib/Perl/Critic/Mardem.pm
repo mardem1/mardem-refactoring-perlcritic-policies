@@ -65,6 +65,10 @@ large code block as statement count "{...}"
 
 large files as line count
 
+=head2 L<Perl::Critic::Policy::Mardem::ProhibitLargeSub>
+
+large subs as statement count
+
 =head2 L<Perl::Critic::Policy::Mardem::ProhibitReturnBooleanAsInt>
 
 return boolean as int "return 1;"
@@ -72,10 +76,6 @@ return boolean as int "return 1;"
 =head2 L<Perl::Critic::Policy::Mardem::ProhibitManyConditionsInSub>
 
 subs has many conditionals "if, while, for, ..."
-
-=head2 L<Perl::Critic::Policy::Mardem::ProhibitLargeSub>
-
-large subs as statement count
 
 =head1 AFFILIATION
 
