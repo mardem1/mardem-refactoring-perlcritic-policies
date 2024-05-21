@@ -136,34 +136,3 @@ main();
 __END__
 
 #-----------------------------------------------------------------------------
-
-=pod
-
-=encoding utf8
-
-=head1 NAME
-
-run-30-pod-check.pl
-
-=head1 DESCRIPTION
-
-Helper script to run a pod on all files.
-
-=head1 AFFILIATION
-
-This policy is part of L<Perl::Critic::Mardem>.
-
-=head1 AUTHOR
-
-Markus Demml, mardem@cpan.com
-
-=head1 LICENSE AND COPYRIGHT
-
-Copyright (c) 2024, Markus Demml
-
-This library is free software; you can redistribute it and/or modify it
-under the same terms as the Perl 5 programming language system itself.
-The full text of this license can be found in the LICENSE file included
-with this module.
-
-=cut
