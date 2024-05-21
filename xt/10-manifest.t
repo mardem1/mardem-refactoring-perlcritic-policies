@@ -7,8 +7,6 @@ use 5.010;
 use strict;
 use warnings;
 
-our $VERSION = '0.05';
-
 use Test::More;
 use English qw( -no_match_vars );
 

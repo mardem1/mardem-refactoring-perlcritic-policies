@@ -7,8 +7,6 @@ use 5.010;
 use strict;
 use warnings;
 
-our $VERSION = '0.05';
-
 use Test2::V0;
 use Test2::Tools::Exception qw/lives/;
 
